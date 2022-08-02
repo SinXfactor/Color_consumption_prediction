@@ -64,6 +64,7 @@ st.subheader("Calculated Color Paste:")
 st.latex(r'''Quantity = \left(\frac{Coverage × Meters}{700}\right) + 23 Kg''')
 st.info(cal)
 
+# following code needs wouldn't work in local machine
 with open('./model/color_model.pickle', 'rb') as f:
     model = pickle.load(f)
 
